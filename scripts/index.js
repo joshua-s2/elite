@@ -18,16 +18,16 @@ const projectList = [
     [4, 5]
 ];
 const bannerData = [{
-        large_text: "We Offer Lots of Services",
-        small_text: "Unmatched services with years of customer's satisfaction",
+        large_text: "Creativity at its Peak",
+        small_text: "At The Elite Creative Design, we garnish all our work with a touch of creativity and class.",
         button_text: "our services",
         button_url: "/services.html",
         image_url: "./assets/home1.png",
 
     },
     {
-        large_text: "We Offer Quality & Unique Services",
-        small_text: "Unmatched services with years of customer's satisfaction",
+        large_text: "Home Beauty is not a Feat",
+        small_text: "We see home beautification as a way of life at The Elite creative Design. To us it is not a feat but a standard.",
         button_text: "our firm",
         button_url: "/about.html",
         image_url: "./assets/home2.png"
