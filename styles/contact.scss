@@ -1,0 +1,120 @@
+@import "common"; 
+@import "header-mod";
+
+.contact-row {
+  display: flex;
+  flex-direction: column;
+
+  .contact-details,
+  .contact-form {
+    padding: 2rem 0;
+  }
+
+  .contact-details {
+    flex: 1;
+
+    .contact-description {
+      line-height: 1.8rem;
+    }
+
+    .contact-info-wrapper {
+
+      .contact-info {
+        margin-top: 1rem;
+
+        .contact-info-entry {
+          border-bottom: 1px solid #DDDDDD;
+          display: flex;
+          padding: 1rem 0;
+          text-align: center;
+          align-items: center;
+
+          .contact-icon {
+            margin-right: 0.5rem;
+
+            img {
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    flex: 2;
+
+    form {
+      .personal-details {
+        input {
+          width: 100%;
+
+          @include minWidth($breakpoint-tablet) {
+            width: 32%;
+          }
+        }
+      }
+
+      .message {
+        width: 100%;
+        textarea {
+          width: 100%;
+        }
+      }
+
+      .contact-form-submit {
+        padding: 1rem 3rem;
+      }
+    }
+  }
+
+  @include minWidth($breakpoint-tablet) {
+    flex-direction: row;
+
+    .contact-details,
+    .contact-form {
+      padding: unset;
+    }
+
+    .contact-details {
+      margin-right: 2rem;
+    }
+  }
+}
+
+#exclusive {
+  form {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5rem 0;
+    background: white;
+    border: 1px solid #EEEEEE;
+  
+    input {
+      width: 60%;
+      border: none;
+      border-bottom: 2px solid #B98036;
+    }
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.8rem;
+    }
+  }
+
+  @include minWidth($breakpoint-tablet) {
+    form {
+      width: 70%;
+    }
+  }
+
+  @include minWidth($breakpoint-desktop) {
+    form {
+      width: 60%;
+    }
+  }
+}

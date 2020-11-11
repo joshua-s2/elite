@@ -1,0 +1,15 @@
+#top-strip {
+  &.inverse {
+    #logo {
+      @include minWidth($breakpoint-tablet) {
+        background: $menu-mask-color;
+      }
+    }
+  }
+
+  #logo {
+    @include minWidth($breakpoint-tablet) {
+      background: #FFF3CF;
+    }
+  }
+}

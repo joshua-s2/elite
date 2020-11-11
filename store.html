@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/bootstrap.css">
+    <link rel="stylesheet" href="./styles/store.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=PT+Serif:wght@700&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/2515d2165c.js" crossorigin="anonymous"></script> -->
+    <script src="./scripts/fontaws.js"></script>
+    <title>The Elite Creative Design</title>
+</head>
+
+<body>
+    <header>
+        <div id="top-strip-container">
+            <section id="top-strip" class="contain">
+                <div id="logo">
+                    <a href="index.html"><img class="inverse-logo" src="./assets/logo.png" alt="The Elite Creative Design Logo."></a>
+                    <a href="index.html"><img class="default-logo" src="./assets/logo_white.svg" alt="The Elite Creative Design Logo."></a>
+                </div>
+
+                <div id="navigation-wrapper">
+                    <div class="contact-details-wrapper">
+                        <div class="contact-details">
+                            <div class="contact-info">
+                                <span class="contact-icon"><img src="./assets/mail_icon.svg" alt="Icon."></span>
+                                <div class="contact-detail">orders@theelitecreative.com</div>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-icon"><img src="./assets/location_icon.svg" alt="Icon."></span>
+                                <div class="contact-detail">Osapa Estate, Jakande Bus Stop</div>
+                            </div>
+                            <div class="contact-info">
+                                <span class="contact-icon"><img src="./assets/phone_icon.svg" alt="Icon."></span>
+                                <div class="contact-detail">+234 8131119135</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <div id="menu-button" class="menu">
+                            <div class="menu-text">Menu</div>
+                            <img class="menu-icon" src="./assets/menu.svg" alt="Menu Icon.">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="menu-wrapper" class="">
+            <div class="menu-container">
+                <div class="menu-items">
+                    <a href="/" class="menu-link">Home</a>
+                    <a href="about-us.html" class="menu-link">About Us</a>
+                    <a href="services.html" class="menu-link">Our Services</a>
+                    <a href="store.html" class="menu-link">Retail Store</a>
+                    <a href="#" data-toggle="modal" data-target="#appointment" class="menu-link">Book an Appointment</a>
+                    <a href="contact.html" class="menu-link">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- appointment modal  -->
+    <!-- Modal -->
+    <div class="modal fade" id="appointment" tabindex="-1" aria-labelledby="appointmentLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">
+                                <svg viewbox="-42 0 512 512.001" xmlns="http://www.w3.org/2000/svg"
+                                    style="fill:#C8933B ;">
+                                    <path
+                                        d="m210.351562 246.632812c33.882813 0 63.21875-12.152343 87.195313-36.128906 23.96875-23.972656 36.125-53.304687 36.125-87.191406 0-33.875-12.152344-63.210938-36.128906-87.191406-23.976563-23.96875-53.3125-36.121094-87.191407-36.121094-33.886718 0-63.21875 12.152344-87.191406 36.125s-36.128906 53.308594-36.128906 87.1875c0 33.886719 12.15625 63.222656 36.128906 87.195312 23.980469 23.96875 53.316406 36.125 87.191406 36.125zm-65.972656-189.292968c18.394532-18.394532 39.972656-27.335938 65.972656-27.335938 25.996094 0 47.578126 8.941406 65.976563 27.335938 18.394531 18.398437 27.339844 39.980468 27.339844 65.972656 0 26-8.945313 47.578125-27.339844 65.976562-18.398437 18.398438-39.980469 27.339844-65.976563 27.339844-25.992187 0-47.570312-8.945312-65.972656-27.339844-18.398437-18.394531-27.34375-39.976562-27.34375-65.976562 0-25.992188 8.945313-47.574219 27.34375-65.972656zm0 0" />
+                                    <path
+                                        d="m426.128906 393.703125c-.691406-9.976563-2.089844-20.859375-4.148437-32.351563-2.078125-11.578124-4.753907-22.523437-7.957031-32.527343-3.3125-10.339844-7.808594-20.550781-13.375-30.335938-5.769532-10.15625-12.550782-19-20.160157-26.277343-7.957031-7.613282-17.699219-13.734376-28.964843-18.199219-11.226563-4.441407-23.667969-6.691407-36.976563-6.691407-5.226563 0-10.28125 2.144532-20.042969 8.5-6.007812 3.917969-13.035156 8.449219-20.878906 13.460938-6.707031 4.273438-15.792969 8.277344-27.015625 11.902344-10.949219 3.542968-22.066406 5.339844-33.042969 5.339844-10.96875 0-22.085937-1.796876-33.042968-5.339844-11.210938-3.621094-20.300782-7.625-26.996094-11.898438-7.769532-4.964844-14.800782-9.496094-20.898438-13.46875-9.753906-6.355468-14.808594-8.5-20.035156-8.5-13.3125 0-25.75 2.253906-36.972656 6.699219-11.257813 4.457031-21.003906 10.578125-28.96875 18.199219-7.609375 7.28125-14.390625 16.121094-20.15625 26.273437-5.558594 9.785157-10.058594 19.992188-13.371094 30.339844-3.199219 10.003906-5.875 20.945313-7.953125 32.523437-2.0625 11.476563-3.457031 22.363282-4.148437 32.363282-.679688 9.777344-1.023438 19.953125-1.023438 30.234375 0 26.726562 8.496094 48.363281 25.25 64.320312 16.546875 15.746094 38.4375 23.730469 65.066406 23.730469h246.53125c26.621094 0 48.511719-7.984375 65.0625-23.730469 16.757813-15.945312 25.253906-37.589843 25.253906-64.324219-.003906-10.316406-.351562-20.492187-1.035156-30.242187zm-44.90625 72.828125c-10.933594 10.40625-25.449218 15.464844-44.378906 15.464844h-246.527344c-18.933594 0-33.449218-5.058594-44.378906-15.460938-10.722656-10.207031-15.933594-24.140625-15.933594-42.585937 0-9.59375.316406-19.066407.949219-28.160157.617187-8.921874 1.878906-18.722656 3.75-29.136718 1.847656-10.285156 4.199219-19.9375 6.996094-28.675782 2.683593-8.378906 6.34375-16.675781 10.882812-24.667968 4.332031-7.617188 9.316407-14.152344 14.816407-19.417969 5.144531-4.925781 11.628906-8.957031 19.269531-11.980469 7.066406-2.796875 15.007812-4.328125 23.628906-4.558594 1.050781.558594 2.921875 1.625 5.953125 3.601563 6.167969 4.019531 13.277344 8.605469 21.136719 13.625 8.859375 5.648437 20.273437 10.75 33.910156 15.152344 13.941406 4.507812 28.160156 6.796875 42.273437 6.796875 14.113282 0 28.335938-2.289063 42.269532-6.792969 13.648437-4.410156 25.058594-9.507813 33.929687-15.164063 8.042969-5.140624 14.953125-9.59375 21.121094-13.617187 3.03125-1.972656 4.902344-3.042969 5.953125-3.601563 8.625.230469 16.566406 1.761719 23.636719 4.558594 7.636719 3.023438 14.121093 7.058594 19.265625 11.980469 5.5 5.261719 10.484375 11.796875 14.816406 19.421875 4.542969 7.988281 8.207031 16.289062 10.886719 24.660156 2.800781 8.75 5.15625 18.398438 7 28.675782 1.867187 10.433593 3.132812 20.238281 3.75 29.144531v.007812c.636719 9.058594.957031 18.527344.960937 28.148438-.003906 18.449219-5.214844 32.378906-15.9375 42.582031zm0 0" />
+                                </svg>
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="name" class="form-control appoint-form" id="name" placeholder="Client Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="message" class="col-sm-2 col-form-label"><svg height="512pt"
+                                    viewbox="0 -1 512 512" width="512px" xmlns="http://www.w3.org/2000/svg"
+                                    style="fill: #C8933B;">
+                                    <path
+                                        d="m204.5 458.605469v51.855469l-12.539062-10.128907c-1.9375-1.566406-48.035157-38.992187-94.78125-92.660156-64.484376-74.035156-97.179688-140.492187-97.179688-197.519531v-5.652344c0-112.761719 91.738281-204.5 204.5-204.5s204.5 91.738281 204.5 204.5v5.652344c0 4.789062-.253906 9.652344-.714844 14.574218l-39.992187-36.484374c-8.191407-83.15625-78.519531-148.339844-163.792969-148.339844-90.757812 0-164.597656 73.839844-164.597656 164.597656v5.652344c0 96.367187 124.164062 213.027344 164.597656 248.453125zm122.699219-28.660157h59.851562v-59.851562h-59.851562zm-122.699219-310.238281c46.753906 0 84.792969 38.039063 84.792969 84.792969s-38.039063 84.792969-84.792969 84.792969-84.792969-38.039063-84.792969-84.792969 38.039063-84.792969 84.792969-84.792969zm0 39.902344c-24.753906 0-44.890625 20.136719-44.890625 44.890625 0 24.75 20.136719 44.890625 44.890625 44.890625 24.75 0 44.890625-20.140625 44.890625-44.890625 0-24.753906-20.140625-44.890625-44.890625-44.890625zm280.609375 243.222656-11.21875-10.234375v64.058594c0 29.828125-24.269531 54.09375-54.097656 54.09375h-126.332031c-29.828126 0-54.097657-24.265625-54.097657-54.09375v-64.058594l-11.21875 10.234375-26.890625-29.476562 155.371094-141.746094 155.375 141.746094zm-51.121094-46.636719-77.363281-70.574218-77.359375 70.574218v100.457032c0 7.828125 6.367187 14.195312 14.195313 14.195312h126.332031c7.828125 0 14.195312-6.367187 14.195312-14.195312zm0 0" />
+                                </svg>
+                            </label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="content" rows="3" placeholder="Client Address"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="message" class="col-sm-2 col-form-label">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="67.732" height="67.736"
+                                    viewbox="0 0 67.732 67.736">
+                                    <defs>
+                                        <style>
+                                            .a {
+                                                fill: #e99f1e;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <g transform="translate(0)">
+                                        <path class="a"
+                                            d="M120.85,145.669a24.835,24.835,0,1,0-24.835-24.835A24.835,24.835,0,0,0,120.85,145.669Zm-19.19-25.963H98.33a22.567,22.567,0,0,1,21.391-21.39v3.329a1.129,1.129,0,1,0,2.258,0V98.315a22.567,22.567,0,0,1,21.391,21.39h-4.458a1.129,1.129,0,1,0,0,2.258h4.458a22.567,22.567,0,0,1-21.391,21.391v-3.329a1.129,1.129,0,0,0-2.258,0v3.329A22.567,22.567,0,0,1,98.33,121.963h3.329a1.129,1.129,0,1,0,0-2.258Z"
+                                            transform="translate(-82.469 -82.454)" />
+                                        <path class="a"
+                                            d="M98.167,23.725q-.5-.875-1.069-1.713l2.787-2.787a1.129,1.129,0,0,0,0-1.6l-6.378-6.378a1.129,1.129,0,0,0-1.6,0l-2.792,2.783A29.175,29.175,0,0,0,73.88,9.059v-6.8h7.9a1.129,1.129,0,0,0,0-2.258H63.72a1.129,1.129,0,1,0,0,2.258h7.9V9.069a29.316,29.316,0,0,0-24.27,14.637H41.143a1.129,1.129,0,0,0,0,2.258h6.773c.029,0,.054-.015.084-.017a1.118,1.118,0,0,0,.985-.564,27.092,27.092,0,1,1,0,26.009,1.118,1.118,0,0,0-.983-.57c-.029,0-.055-.017-.086-.017H41.143a1.129,1.129,0,1,0,0,2.258h6.209A29.338,29.338,0,0,0,98.167,23.725Zm-7.2-8.335,1.745-1.745,4.782,4.782-1.747,1.747A29.659,29.659,0,0,0,90.964,15.39Z"
+                                            transform="translate(-34.37)" />
+                                        <path class="a"
+                                            d="M11.3,265.129A1.129,1.129,0,0,0,10.175,264H1.144a1.129,1.129,0,1,0,0,2.258h9.031A1.129,1.129,0,0,0,11.3,265.129Z"
+                                            transform="translate(-0.015 -226.748)" />
+                                        <path class="a"
+                                            d="M17.144,218.258h7.9a1.129,1.129,0,1,0,0-2.258h-7.9a1.129,1.129,0,1,0,0,2.258Z"
+                                            transform="translate(-13.757 -185.521)" />
+                                        <path class="a"
+                                            d="M26.175,313.129A1.129,1.129,0,0,0,25.046,312h-7.9a1.129,1.129,0,0,0,0,2.258h7.9A1.129,1.129,0,0,0,26.175,313.129Z"
+                                            transform="translate(-13.757 -267.975)" />
+                                        <path class="a"
+                                            d="M202.689,218.5a1.129,1.129,0,0,0,1.6,0l15.691-15.691a1.129,1.129,0,0,0-1.6-1.6l-14.893,14.893-6.717-6.717a1.129,1.129,0,0,0-1.6,1.6Z"
+                                            transform="translate(-167.364 -172.551)" />
+                                    </g>
+                                </svg>
+                            </label>
+                            <div class="col-sm-10">
+                                <input type="time" class="form-control appoint-form" id="time">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary appoint-btn">BOOK APPOINTMENT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal ends  -->
+
+
+    <section id="banner-container" class="top store-banner-container">
+        <div class="banner">
+            <div class="banner-text header-text large-text">
+                The Elite Creative Retail Store
+            </div>
+            <div class="store-banner-search">
+                <div class="category">
+                    <select name="category" id="search-category">
+                        <option value="Furniture">Furniture</option>
+                    </select>
+                </div>
+                <div class="input-text-container">
+                    <input placeholder="Enter text" type="text" name="input-text" id="input-text">
+                </div>
+                <div class="search-button-container">
+                    <button type="submit" id="search-btn" class="btn">
+                        search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="d-flex justify-content-end mt-4">
+        <button type="button" class="cart-btn mr-2">
+            <svg id="Layer_1" enable-background="new 0 0 511.728 511.728" height="512" viewbox="0 0 511.728 511.728"
+                width="512" style="fill: #fff; height: 42px; width: 47px;" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="m147.925 379.116c-22.357-1.142-21.936-32.588-.001-33.68 62.135.216 226.021.058 290.132.103 17.535 0 32.537-11.933 36.481-29.017l36.404-157.641c2.085-9.026-.019-18.368-5.771-25.629s-14.363-11.484-23.626-11.484c-25.791 0-244.716-.991-356.849-1.438l-17.775-65.953c-4.267-15.761-18.65-26.768-34.978-26.768h-56.942c-8.284 0-15 6.716-15 15s6.716 15 15 15h56.942c2.811 0 5.286 1.895 6.017 4.592l68.265 253.276c-12.003.436-23.183 5.318-31.661 13.92-8.908 9.04-13.692 21.006-13.471 33.695.442 25.377 21.451 46.023 46.833 46.023h21.872c-3.251 6.824-5.076 14.453-5.076 22.501 0 28.95 23.552 52.502 52.502 52.502s52.502-23.552 52.502-52.502c0-8.049-1.826-15.677-5.077-22.501h94.716c-3.248 6.822-5.073 14.447-5.073 22.493 0 28.95 23.553 52.502 52.502 52.502 28.95 0 52.503-23.553 52.503-52.502 0-8.359-1.974-16.263-5.464-23.285 5.936-1.999 10.216-7.598 10.216-14.207 0-8.284-6.716-15-15-15zm91.799 52.501c0 12.408-10.094 22.502-22.502 22.502s-22.502-10.094-22.502-22.502c0-12.401 10.084-22.491 22.483-22.501h.038c12.399.01 22.483 10.1 22.483 22.501zm167.07 22.494c-12.407 0-22.502-10.095-22.502-22.502 0-12.285 9.898-22.296 22.137-22.493h.731c12.24.197 22.138 10.208 22.138 22.493-.001 12.407-10.096 22.502-22.504 22.502zm74.86-302.233c.089.112.076.165.057.251l-15.339 66.425h-51.942l8.845-67.023 58.149.234c.089.002.142.002.23.113zm-154.645 163.66v-66.984h53.202l-8.84 66.984zm-74.382 0-8.912-66.984h53.294v66.984zm-69.053 0h-.047c-3.656-.001-6.877-2.467-7.828-5.98l-16.442-61.004h54.193l8.912 66.984zm56.149-96.983-9.021-67.799 66.306.267v67.532zm87.286 0v-67.411l66.022.266-8.861 67.145zm-126.588-67.922 9.037 67.921h-58.287l-18.38-68.194zm237.635 164.905h-36.426l8.84-66.984h48.973l-14.137 61.217c-.784 3.396-3.765 5.767-7.25 5.767z" />
+            </svg>
+            Add to cart
+        </button>
+        <button type="button" class="pay-btn mr-2">
+            <img src="./assets/Test me Paystack.png" class="paystack" height="79px" width="199px" alt="">
+            <span style="color: #C8933B;">PAY</span>
+        </button>
+    </section>
+    <section class="contain">
+        <div class="row">
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="./assets/store-item.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title item__title">Light Sofa with throw pillows....</h5>
+                        <p class="card-text item__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                        <a href="#" data-toggle="modal" data-target="#staticBackdrop" class="d-flex justify-content-end "><i class="fas fa-ellipsis-v"
+                                style="color:#5A2B5F;  font-size: 2.5rem;"></i></a>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6"><img src="./assets/store-item.png" class="img-fluid rounded" alt=""></div>
+                                    <div class="col-md-6">
+                                        <h3 class="modal__title">Light Sofa with throw pillows.</h3>
+                                        <p class="card-text modal__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                                        <p><b>Product Description</b>: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                                            class="modal__txt" exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#cart__modal" class="md-cart-btn">
+                                    <svg id="Layer_2" enable-background="new 0 0 511.728 511.728" height="512"
+                                        viewbox="0 0 511.728 511.728" width="512" style="fill: #fff; "
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m147.925 379.116c-22.357-1.142-21.936-32.588-.001-33.68 62.135.216 226.021.058 290.132.103 17.535 0 32.537-11.933 36.481-29.017l36.404-157.641c2.085-9.026-.019-18.368-5.771-25.629s-14.363-11.484-23.626-11.484c-25.791 0-244.716-.991-356.849-1.438l-17.775-65.953c-4.267-15.761-18.65-26.768-34.978-26.768h-56.942c-8.284 0-15 6.716-15 15s6.716 15 15 15h56.942c2.811 0 5.286 1.895 6.017 4.592l68.265 253.276c-12.003.436-23.183 5.318-31.661 13.92-8.908 9.04-13.692 21.006-13.471 33.695.442 25.377 21.451 46.023 46.833 46.023h21.872c-3.251 6.824-5.076 14.453-5.076 22.501 0 28.95 23.552 52.502 52.502 52.502s52.502-23.552 52.502-52.502c0-8.049-1.826-15.677-5.077-22.501h94.716c-3.248 6.822-5.073 14.447-5.073 22.493 0 28.95 23.553 52.502 52.502 52.502 28.95 0 52.503-23.553 52.503-52.502 0-8.359-1.974-16.263-5.464-23.285 5.936-1.999 10.216-7.598 10.216-14.207 0-8.284-6.716-15-15-15zm91.799 52.501c0 12.408-10.094 22.502-22.502 22.502s-22.502-10.094-22.502-22.502c0-12.401 10.084-22.491 22.483-22.501h.038c12.399.01 22.483 10.1 22.483 22.501zm167.07 22.494c-12.407 0-22.502-10.095-22.502-22.502 0-12.285 9.898-22.296 22.137-22.493h.731c12.24.197 22.138 10.208 22.138 22.493-.001 12.407-10.096 22.502-22.504 22.502zm74.86-302.233c.089.112.076.165.057.251l-15.339 66.425h-51.942l8.845-67.023 58.149.234c.089.002.142.002.23.113zm-154.645 163.66v-66.984h53.202l-8.84 66.984zm-74.382 0-8.912-66.984h53.294v66.984zm-69.053 0h-.047c-3.656-.001-6.877-2.467-7.828-5.98l-16.442-61.004h54.193l8.912 66.984zm56.149-96.983-9.021-67.799 66.306.267v67.532zm87.286 0v-67.411l66.022.266-8.861 67.145zm-126.588-67.922 9.037 67.921h-58.287l-18.38-68.194zm237.635 164.905h-36.426l8.84-66.984h48.973l-14.137 61.217c-.784 3.396-3.765 5.767-7.25 5.767z" />
+                                    </svg>
+                                    Add to cart
+                                </button> <button type="button" class="md-pay-btn">
+                                    <img src="./assets/Test me Paystack.png" class="paystack2" height="79px"
+                                        width="199px" alt="">
+                                    <span style="color: #C8933B;">PAY</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="./assets/store-item.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title item__title">Light Sofa with throw pillows....</h5>
+                        <p class="card-text item__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                        <a href="#" data-toggle="modal" data-target="#staticBackdrop" class="d-flex justify-content-end "><i class="fas fa-ellipsis-v"
+                                style="color:#5A2B5F;  font-size: 2.5rem;"></i></a>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6"><img src="./assets/store-item.png" class="img-fluid rounded" alt=""></div>
+                                    <div class="col-md-6">
+                                        <h3 class="modal__title">Light Sofa with throw pillows.</h3>
+                                        <p class="card-text modal__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                                        <p><b>Product Description</b>: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                                            class="modal__txt" exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#cart__modal" class="md-cart-btn">
+                                    <svg id="Layer_2" enable-background="new 0 0 511.728 511.728" height="512"
+                                        viewbox="0 0 511.728 511.728" width="512" style="fill: #fff; "
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m147.925 379.116c-22.357-1.142-21.936-32.588-.001-33.68 62.135.216 226.021.058 290.132.103 17.535 0 32.537-11.933 36.481-29.017l36.404-157.641c2.085-9.026-.019-18.368-5.771-25.629s-14.363-11.484-23.626-11.484c-25.791 0-244.716-.991-356.849-1.438l-17.775-65.953c-4.267-15.761-18.65-26.768-34.978-26.768h-56.942c-8.284 0-15 6.716-15 15s6.716 15 15 15h56.942c2.811 0 5.286 1.895 6.017 4.592l68.265 253.276c-12.003.436-23.183 5.318-31.661 13.92-8.908 9.04-13.692 21.006-13.471 33.695.442 25.377 21.451 46.023 46.833 46.023h21.872c-3.251 6.824-5.076 14.453-5.076 22.501 0 28.95 23.552 52.502 52.502 52.502s52.502-23.552 52.502-52.502c0-8.049-1.826-15.677-5.077-22.501h94.716c-3.248 6.822-5.073 14.447-5.073 22.493 0 28.95 23.553 52.502 52.502 52.502 28.95 0 52.503-23.553 52.503-52.502 0-8.359-1.974-16.263-5.464-23.285 5.936-1.999 10.216-7.598 10.216-14.207 0-8.284-6.716-15-15-15zm91.799 52.501c0 12.408-10.094 22.502-22.502 22.502s-22.502-10.094-22.502-22.502c0-12.401 10.084-22.491 22.483-22.501h.038c12.399.01 22.483 10.1 22.483 22.501zm167.07 22.494c-12.407 0-22.502-10.095-22.502-22.502 0-12.285 9.898-22.296 22.137-22.493h.731c12.24.197 22.138 10.208 22.138 22.493-.001 12.407-10.096 22.502-22.504 22.502zm74.86-302.233c.089.112.076.165.057.251l-15.339 66.425h-51.942l8.845-67.023 58.149.234c.089.002.142.002.23.113zm-154.645 163.66v-66.984h53.202l-8.84 66.984zm-74.382 0-8.912-66.984h53.294v66.984zm-69.053 0h-.047c-3.656-.001-6.877-2.467-7.828-5.98l-16.442-61.004h54.193l8.912 66.984zm56.149-96.983-9.021-67.799 66.306.267v67.532zm87.286 0v-67.411l66.022.266-8.861 67.145zm-126.588-67.922 9.037 67.921h-58.287l-18.38-68.194zm237.635 164.905h-36.426l8.84-66.984h48.973l-14.137 61.217c-.784 3.396-3.765 5.767-7.25 5.767z" />
+                                    </svg>
+                                    Add to cart
+                                </button> <button type="button" class="md-pay-btn">
+                                    <img src="./assets/Test me Paystack.png" class="paystack2" height="79px"
+                                        width="199px" alt="">
+                                    <span style="color: #C8933B;">PAY</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="./assets/store-item.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title item__title">Light Sofa with throw pillows....</h5>
+                        <p class="card-text item__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                        <a href="#" data-toggle="modal" data-target="#staticBackdrop" class="d-flex justify-content-end "><i class="fas fa-ellipsis-v"
+                                style="color:#5A2B5F;  font-size: 2.5rem;"></i></a>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6"><img src="./assets/store-item.png" class="img-fluid rounded" alt=""></div>
+                                    <div class="col-md-6">
+                                        <h3 class="modal__title">Light Sofa with throw pillows.</h3>
+                                        <p class="card-text modal__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                                        <p><b>Product Description</b>: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                                            class="modal__txt" exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#cart__modal" class="md-cart-btn">
+                                    <svg id="Layer_2" enable-background="new 0 0 511.728 511.728" height="512"
+                                        viewbox="0 0 511.728 511.728" width="512" style="fill: #fff; "
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m147.925 379.116c-22.357-1.142-21.936-32.588-.001-33.68 62.135.216 226.021.058 290.132.103 17.535 0 32.537-11.933 36.481-29.017l36.404-157.641c2.085-9.026-.019-18.368-5.771-25.629s-14.363-11.484-23.626-11.484c-25.791 0-244.716-.991-356.849-1.438l-17.775-65.953c-4.267-15.761-18.65-26.768-34.978-26.768h-56.942c-8.284 0-15 6.716-15 15s6.716 15 15 15h56.942c2.811 0 5.286 1.895 6.017 4.592l68.265 253.276c-12.003.436-23.183 5.318-31.661 13.92-8.908 9.04-13.692 21.006-13.471 33.695.442 25.377 21.451 46.023 46.833 46.023h21.872c-3.251 6.824-5.076 14.453-5.076 22.501 0 28.95 23.552 52.502 52.502 52.502s52.502-23.552 52.502-52.502c0-8.049-1.826-15.677-5.077-22.501h94.716c-3.248 6.822-5.073 14.447-5.073 22.493 0 28.95 23.553 52.502 52.502 52.502 28.95 0 52.503-23.553 52.503-52.502 0-8.359-1.974-16.263-5.464-23.285 5.936-1.999 10.216-7.598 10.216-14.207 0-8.284-6.716-15-15-15zm91.799 52.501c0 12.408-10.094 22.502-22.502 22.502s-22.502-10.094-22.502-22.502c0-12.401 10.084-22.491 22.483-22.501h.038c12.399.01 22.483 10.1 22.483 22.501zm167.07 22.494c-12.407 0-22.502-10.095-22.502-22.502 0-12.285 9.898-22.296 22.137-22.493h.731c12.24.197 22.138 10.208 22.138 22.493-.001 12.407-10.096 22.502-22.504 22.502zm74.86-302.233c.089.112.076.165.057.251l-15.339 66.425h-51.942l8.845-67.023 58.149.234c.089.002.142.002.23.113zm-154.645 163.66v-66.984h53.202l-8.84 66.984zm-74.382 0-8.912-66.984h53.294v66.984zm-69.053 0h-.047c-3.656-.001-6.877-2.467-7.828-5.98l-16.442-61.004h54.193l8.912 66.984zm56.149-96.983-9.021-67.799 66.306.267v67.532zm87.286 0v-67.411l66.022.266-8.861 67.145zm-126.588-67.922 9.037 67.921h-58.287l-18.38-68.194zm237.635 164.905h-36.426l8.84-66.984h48.973l-14.137 61.217c-.784 3.396-3.765 5.767-7.25 5.767z" />
+                                    </svg>
+                                    Add to cart
+                                </button> <button type="button" class="md-pay-btn">
+                                    <img src="./assets/Test me Paystack.png" class="paystack2" height="79px"
+                                        width="199px" alt="">
+                                    <span style="color: #C8933B;">PAY</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="./assets/store-item.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title item__title">Light Sofa with throw pillows....</h5>
+                        <p class="card-text item__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                        <a href="#" data-toggle="modal" data-target="#staticBackdrop" class="d-flex justify-content-end "><i class="fas fa-ellipsis-v"
+                                style="color:#5A2B5F;  font-size: 2.5rem;"></i></a>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6"><img src="./assets/store-item.png" class="img-fluid rounded" alt=""></div>
+                                    <div class="col-md-6">
+                                        <h3 class="modal__title">Light Sofa with throw pillows.</h3>
+                                        <p class="card-text modal__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                                        <p><b>Product Description</b>: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                                            class="modal__txt" exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#cart__modal" class="md-cart-btn">
+                                    <svg id="Layer_2" enable-background="new 0 0 511.728 511.728" height="512"
+                                        viewbox="0 0 511.728 511.728" width="512" style="fill: #fff; "
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m147.925 379.116c-22.357-1.142-21.936-32.588-.001-33.68 62.135.216 226.021.058 290.132.103 17.535 0 32.537-11.933 36.481-29.017l36.404-157.641c2.085-9.026-.019-18.368-5.771-25.629s-14.363-11.484-23.626-11.484c-25.791 0-244.716-.991-356.849-1.438l-17.775-65.953c-4.267-15.761-18.65-26.768-34.978-26.768h-56.942c-8.284 0-15 6.716-15 15s6.716 15 15 15h56.942c2.811 0 5.286 1.895 6.017 4.592l68.265 253.276c-12.003.436-23.183 5.318-31.661 13.92-8.908 9.04-13.692 21.006-13.471 33.695.442 25.377 21.451 46.023 46.833 46.023h21.872c-3.251 6.824-5.076 14.453-5.076 22.501 0 28.95 23.552 52.502 52.502 52.502s52.502-23.552 52.502-52.502c0-8.049-1.826-15.677-5.077-22.501h94.716c-3.248 6.822-5.073 14.447-5.073 22.493 0 28.95 23.553 52.502 52.502 52.502 28.95 0 52.503-23.553 52.503-52.502 0-8.359-1.974-16.263-5.464-23.285 5.936-1.999 10.216-7.598 10.216-14.207 0-8.284-6.716-15-15-15zm91.799 52.501c0 12.408-10.094 22.502-22.502 22.502s-22.502-10.094-22.502-22.502c0-12.401 10.084-22.491 22.483-22.501h.038c12.399.01 22.483 10.1 22.483 22.501zm167.07 22.494c-12.407 0-22.502-10.095-22.502-22.502 0-12.285 9.898-22.296 22.137-22.493h.731c12.24.197 22.138 10.208 22.138 22.493-.001 12.407-10.096 22.502-22.504 22.502zm74.86-302.233c.089.112.076.165.057.251l-15.339 66.425h-51.942l8.845-67.023 58.149.234c.089.002.142.002.23.113zm-154.645 163.66v-66.984h53.202l-8.84 66.984zm-74.382 0-8.912-66.984h53.294v66.984zm-69.053 0h-.047c-3.656-.001-6.877-2.467-7.828-5.98l-16.442-61.004h54.193l8.912 66.984zm56.149-96.983-9.021-67.799 66.306.267v67.532zm87.286 0v-67.411l66.022.266-8.861 67.145zm-126.588-67.922 9.037 67.921h-58.287l-18.38-68.194zm237.635 164.905h-36.426l8.84-66.984h48.973l-14.137 61.217c-.784 3.396-3.765 5.767-7.25 5.767z" />
+                                    </svg>
+                                    Add to cart
+                                </button> <button type="button" class="md-pay-btn">
+                                    <img src="./assets/Test me Paystack.png" class="paystack2" height="79px"
+                                        width="199px" alt="">
+                                    <span style="color: #C8933B;">PAY</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="./assets/store-item.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title item__title">Light Sofa with throw pillows....</h5>
+                        <p class="card-text item__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                        <a href="#" data-toggle="modal" data-target="#staticBackdrop" class="d-flex justify-content-end "><i class="fas fa-ellipsis-v"
+                                style="color:#5A2B5F;  font-size: 2.5rem;"></i></a>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6"><img src="./assets/store-item.png" class="img-fluid rounded" alt=""></div>
+                                    <div class="col-md-6">
+                                        <h3 class="modal__title">Light Sofa with throw pillows.</h3>
+                                        <p class="card-text modal__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                                        <p><b>Product Description</b>: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                                            class="modal__txt" exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#cart__modal" class="md-cart-btn">
+                                    <svg id="Layer_2" enable-background="new 0 0 511.728 511.728" height="512"
+                                        viewbox="0 0 511.728 511.728" width="512" style="fill: #fff; "
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m147.925 379.116c-22.357-1.142-21.936-32.588-.001-33.68 62.135.216 226.021.058 290.132.103 17.535 0 32.537-11.933 36.481-29.017l36.404-157.641c2.085-9.026-.019-18.368-5.771-25.629s-14.363-11.484-23.626-11.484c-25.791 0-244.716-.991-356.849-1.438l-17.775-65.953c-4.267-15.761-18.65-26.768-34.978-26.768h-56.942c-8.284 0-15 6.716-15 15s6.716 15 15 15h56.942c2.811 0 5.286 1.895 6.017 4.592l68.265 253.276c-12.003.436-23.183 5.318-31.661 13.92-8.908 9.04-13.692 21.006-13.471 33.695.442 25.377 21.451 46.023 46.833 46.023h21.872c-3.251 6.824-5.076 14.453-5.076 22.501 0 28.95 23.552 52.502 52.502 52.502s52.502-23.552 52.502-52.502c0-8.049-1.826-15.677-5.077-22.501h94.716c-3.248 6.822-5.073 14.447-5.073 22.493 0 28.95 23.553 52.502 52.502 52.502 28.95 0 52.503-23.553 52.503-52.502 0-8.359-1.974-16.263-5.464-23.285 5.936-1.999 10.216-7.598 10.216-14.207 0-8.284-6.716-15-15-15zm91.799 52.501c0 12.408-10.094 22.502-22.502 22.502s-22.502-10.094-22.502-22.502c0-12.401 10.084-22.491 22.483-22.501h.038c12.399.01 22.483 10.1 22.483 22.501zm167.07 22.494c-12.407 0-22.502-10.095-22.502-22.502 0-12.285 9.898-22.296 22.137-22.493h.731c12.24.197 22.138 10.208 22.138 22.493-.001 12.407-10.096 22.502-22.504 22.502zm74.86-302.233c.089.112.076.165.057.251l-15.339 66.425h-51.942l8.845-67.023 58.149.234c.089.002.142.002.23.113zm-154.645 163.66v-66.984h53.202l-8.84 66.984zm-74.382 0-8.912-66.984h53.294v66.984zm-69.053 0h-.047c-3.656-.001-6.877-2.467-7.828-5.98l-16.442-61.004h54.193l8.912 66.984zm56.149-96.983-9.021-67.799 66.306.267v67.532zm87.286 0v-67.411l66.022.266-8.861 67.145zm-126.588-67.922 9.037 67.921h-58.287l-18.38-68.194zm237.635 164.905h-36.426l8.84-66.984h48.973l-14.137 61.217c-.784 3.396-3.765 5.767-7.25 5.767z" />
+                                    </svg>
+                                    Add to cart
+                                </button> <button type="button" class="md-pay-btn">
+                                    <img src="./assets/Test me Paystack.png" class="paystack2" height="79px"
+                                        width="199px" alt="">
+                                    <span style="color: #C8933B;">PAY</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 my-4">
+                <div class="card">
+                    <img src="./assets/store-item.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title item__title">Light Sofa with throw pillows....</h5>
+                        <p class="card-text item__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                        <a href="#" data-toggle="modal" data-target="#staticBackdrop" class="d-flex justify-content-end "><i class="fas fa-ellipsis-v"
+                                style="color:#5A2B5F;  font-size: 2.5rem;"></i></a>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6"><img src="./assets/store-item.png" class="img-fluid rounded" alt=""></div>
+                                    <div class="col-md-6">
+                                        <h3 class="modal__title">Light Sofa with throw pillows.</h3>
+                                        <p class="card-text modal__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00</p>
+                                        <p><b>Product Description</b>: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud
+                                            class="modal__txt" exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" data-toggle="modal" data-dismiss="modal" data-target="#cart__modal" class="md-cart-btn">
+                                    <svg id="Layer_2" enable-background="new 0 0 511.728 511.728" height="512"
+                                        viewbox="0 0 511.728 511.728" width="512" style="fill: #fff; "
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="m147.925 379.116c-22.357-1.142-21.936-32.588-.001-33.68 62.135.216 226.021.058 290.132.103 17.535 0 32.537-11.933 36.481-29.017l36.404-157.641c2.085-9.026-.019-18.368-5.771-25.629s-14.363-11.484-23.626-11.484c-25.791 0-244.716-.991-356.849-1.438l-17.775-65.953c-4.267-15.761-18.65-26.768-34.978-26.768h-56.942c-8.284 0-15 6.716-15 15s6.716 15 15 15h56.942c2.811 0 5.286 1.895 6.017 4.592l68.265 253.276c-12.003.436-23.183 5.318-31.661 13.92-8.908 9.04-13.692 21.006-13.471 33.695.442 25.377 21.451 46.023 46.833 46.023h21.872c-3.251 6.824-5.076 14.453-5.076 22.501 0 28.95 23.552 52.502 52.502 52.502s52.502-23.552 52.502-52.502c0-8.049-1.826-15.677-5.077-22.501h94.716c-3.248 6.822-5.073 14.447-5.073 22.493 0 28.95 23.553 52.502 52.502 52.502 28.95 0 52.503-23.553 52.503-52.502 0-8.359-1.974-16.263-5.464-23.285 5.936-1.999 10.216-7.598 10.216-14.207 0-8.284-6.716-15-15-15zm91.799 52.501c0 12.408-10.094 22.502-22.502 22.502s-22.502-10.094-22.502-22.502c0-12.401 10.084-22.491 22.483-22.501h.038c12.399.01 22.483 10.1 22.483 22.501zm167.07 22.494c-12.407 0-22.502-10.095-22.502-22.502 0-12.285 9.898-22.296 22.137-22.493h.731c12.24.197 22.138 10.208 22.138 22.493-.001 12.407-10.096 22.502-22.504 22.502zm74.86-302.233c.089.112.076.165.057.251l-15.339 66.425h-51.942l8.845-67.023 58.149.234c.089.002.142.002.23.113zm-154.645 163.66v-66.984h53.202l-8.84 66.984zm-74.382 0-8.912-66.984h53.294v66.984zm-69.053 0h-.047c-3.656-.001-6.877-2.467-7.828-5.98l-16.442-61.004h54.193l8.912 66.984zm56.149-96.983-9.021-67.799 66.306.267v67.532zm87.286 0v-67.411l66.022.266-8.861 67.145zm-126.588-67.922 9.037 67.921h-58.287l-18.38-68.194zm237.635 164.905h-36.426l8.84-66.984h48.973l-14.137 61.217c-.784 3.396-3.765 5.767-7.25 5.767z" />
+                                    </svg>
+                                    Add to cart
+                                </button> <button type="button" class="md-pay-btn">
+                                    <img src="./assets/Test me Paystack.png" class="paystack2" height="79px"
+                                        width="199px" alt="">
+                                    <span style="color: #C8933B;">PAY</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart modal-->
+            <div class="modal fade" id="cart__modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row ">
+                                <div class="col-md-3 ">
+                                    <span class="py-3">
+                                        <img src="./assets/store-item.png" class="img-fluid" alt="">
+                                        <h5 class="cart-box">Light Sofa with throw pillows.</h5>
+                                    </span>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="cart-box py-3">
+                                        <h4 class="cart-txt">QUANTITY</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="cart-box py-3">
+                                        <h4 class="cart-txt ">UNIT PRICE</h4>
+                                        <p class="Cart__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div class="cart-box py-3">
+                                        <h4 class="cart-txt">SUBTOTAL</h4>
+                                        <p class="cart__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <span class="py-3">
+                                        <img src="./assets/store-item.png" class="img-fluid" alt="">
+                                        <h5 class="cart-box">Light Sofa with throw pillows.</h5>
+                                    </span>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="cart-box py-3">
+                                        <h4 class="cart-txt">QUANTITY</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="cart-box py-3">
+                                        <h4 class="cart-txt ">UNIT PRICE</h4>
+                                        <p class="Cart__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 ">
+                                    <div class="cart-box py-3">
+                                        <h4 class="cart-txt">SUBTOTAL</h4>
+                                        <p class="cart__price"><span style="color:  #C8933B;">&#8358;</span> 350, 000.00
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5 class="total_txt d-flex justify-content-end mx-1">Total:<span><span
+                                        style="color:  #C8933B;">&#8358;</span>700, 000.00</span>
+                            </h5>
+
+                            <p class="dlv-txt d-flex justify-content-end mx-1">Delivery fee not included yet</p>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="button" data-dismiss="modal" class="btn2"><svg id="ly"
+                                    enable-background="new 0 0 511.728 511.728" height="20px"
+                                    viewbox="0 0 511.728 511.728" width="20px" style="fill: #fff; "
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m147.925 379.116c-22.357-1.142-21.936-32.588-.001-33.68 62.135.216 226.021.058 290.132.103 17.535 0 32.537-11.933 36.481-29.017l36.404-157.641c2.085-9.026-.019-18.368-5.771-25.629s-14.363-11.484-23.626-11.484c-25.791 0-244.716-.991-356.849-1.438l-17.775-65.953c-4.267-15.761-18.65-26.768-34.978-26.768h-56.942c-8.284 0-15 6.716-15 15s6.716 15 15 15h56.942c2.811 0 5.286 1.895 6.017 4.592l68.265 253.276c-12.003.436-23.183 5.318-31.661 13.92-8.908 9.04-13.692 21.006-13.471 33.695.442 25.377 21.451 46.023 46.833 46.023h21.872c-3.251 6.824-5.076 14.453-5.076 22.501 0 28.95 23.552 52.502 52.502 52.502s52.502-23.552 52.502-52.502c0-8.049-1.826-15.677-5.077-22.501h94.716c-3.248 6.822-5.073 14.447-5.073 22.493 0 28.95 23.553 52.502 52.502 52.502 28.95 0 52.503-23.553 52.503-52.502 0-8.359-1.974-16.263-5.464-23.285 5.936-1.999 10.216-7.598 10.216-14.207 0-8.284-6.716-15-15-15zm91.799 52.501c0 12.408-10.094 22.502-22.502 22.502s-22.502-10.094-22.502-22.502c0-12.401 10.084-22.491 22.483-22.501h.038c12.399.01 22.483 10.1 22.483 22.501zm167.07 22.494c-12.407 0-22.502-10.095-22.502-22.502 0-12.285 9.898-22.296 22.137-22.493h.731c12.24.197 22.138 10.208 22.138 22.493-.001 12.407-10.096 22.502-22.504 22.502zm74.86-302.233c.089.112.076.165.057.251l-15.339 66.425h-51.942l8.845-67.023 58.149.234c.089.002.142.002.23.113zm-154.645 163.66v-66.984h53.202l-8.84 66.984zm-74.382 0-8.912-66.984h53.294v66.984zm-69.053 0h-.047c-3.656-.001-6.877-2.467-7.828-5.98l-16.442-61.004h54.193l8.912 66.984zm56.149-96.983-9.021-67.799 66.306.267v67.532zm87.286 0v-67.411l66.022.266-8.861 67.145zm-126.588-67.922 9.037 67.921h-58.287l-18.38-68.194zm237.635 164.905h-36.426l8.84-66.984h48.973l-14.137 61.217c-.784 3.396-3.765 5.767-7.25 5.767z" />
+                                </svg>CONTINUE
+                                SHOPPING</button>
+                            <button type="button" class="md-pay-btn">
+                                    <img src="./assets/Test me Paystack.png" class="pay"  height="50px"
+                                        width="80px" alt="">
+                                    <span style="color: #C8933B;">PAY</span>
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart modal -->
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <section class="testimonials-container contain">
+        <div class="testimonials">
+            <div class="single-testimonial-container">
+                <div class="single-testimonial">
+                    <div class="small-text">CLIENT BOOK</div>
+                    <div class="title header-text">Customers Reviews</div>
+                    <div class="comment">
+                        Working with The Elite Creative Design took the burden of coming up with the best taste that suit my new house. They came through and I would love working with them.
+
+                    </div>
+                    <div class="author">
+                        <div class="author-name">Mr Dami</div>
+                        <!-- <div class="author-location">Abidjan</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial-container">
+                <div class="single-testimonial">
+                    <div class="small-text">CLIENT BOOK</div>
+                    <div class="title header-text">Customers Reviews</div>
+                    <div class="comment">
+                        Let me not allow their boss feel special, but working with Elite was a great experience and would love that they keep up the good work.
+                    </div>
+                    <div class="author">
+                        <div class="author-name">Mrs Angela</div>
+                        <!-- <div class="author-location">Abidjan</div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="single-testimonial-container">
+                <div class="single-testimonial">
+                    <div class="small-text">CLIENT BOOK</div>
+                    <div class="title header-text">Customers Reviews</div>
+                    <div class="comment">
+                        They are okay and I was impressed with their delivery. Would refer them to friends.
+                    </div>
+                    <div class="author">
+                        <div class="author-name">Mr Obi</div>
+                        <!-- <div class="author-location">Abidjan</div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="flex-column">
+        <div class="section-header contain header-text">
+            The Elite Videos
+        </div>
+        <div class="video">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/50MAloxJsdE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+    </section>
+
+    <section id="subscription">
+        <div class="subscription-text">
+            Sign up to get information on our latest offerings.
+        </div>
+        <form action="" id="subscription-form">
+            <input type="email" placeholder="Enter your Email">
+            <button id="subscribe-submit" class="btn" type="submit"> subscribe </button>
+        </form>
+    </section>
+
+    <footer>
+        <div id="footer-container">
+            <div class="links-section">
+                <div class="links-logo">
+                    <div class="logo">
+                        <img src="./assets/logo_white.svg" alt="The Elite Creative Design Logo.">
+                    </div>
+                </div>
+                <div class="links-column-container">
+                    <div class="links-column">
+                        <div class="link-row-header">Company</div>
+                        <div class="link-row">About</div>
+                        <div class="link-row">Jobs</div>
+                        <div class="link-row">Blog</div>
+                        <div class="link-row">Patnerships</div>
+                    </div>
+                    <div class="links-column">
+                        <div class="link-row-header">Resources</div>
+                        <div class="link-row">FAQ</div>
+                        <div class="link-row">Privacy Policy</div>
+                        <div class="link-row">Terms and Conditions</div>
+                        <div class="link-row">Cookies</div>
+                        <div class="link-row">Contacts</div>
+                    </div>
+                    <div class="links-column">
+                        <div class="link-row-header">Connect</div>
+                        <div class="link-row">Facebook</div>
+                        <div class="link-row">Twitter</div>
+                        <div class="link-row">LinkedIn</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                © 2020 The Elite Creative Design. All rights reserved
+            </div>
+        </div>
+    </footer>
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/popper.min.js"></script>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/common.js"></script>
+</body>
+
+</html>
