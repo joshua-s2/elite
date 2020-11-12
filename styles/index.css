@@ -1263,9 +1263,6 @@ section.reverse .left {
     margin-right: 20px;
 }
 
-.portfolio-items {
-    background: black;
-}
 
 @media screen and (min-width: 760px) {
     #portfolio .portfolio-items-container #portfolio-canvas-container canvas {
