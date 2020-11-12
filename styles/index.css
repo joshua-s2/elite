@@ -59,7 +59,7 @@ input {
 }
 
 section {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
 }
 
@@ -1013,9 +1013,19 @@ section.reverse .left {
     width: 200px;
 }
 
+
+/* 
 #homepage-hero .right #banner-mask {
     position: absolute;
     right: 0;
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    background: black;
+} */
+
+.port-mask {
+    position: absolute;
     opacity: 0.3;
     height: 100%;
     width: 100%;
@@ -1054,17 +1064,17 @@ section.reverse .left {
         width: 75%;
         height: 75vh;
     }
-    #homepage-hero .right #banner-mask {
+    /* #homepage-hero .right #banner-mask {
         position: absolute;
         height: 100%;
         width: 75%;
         background: black;
-    }
+    } */
 }
 
 @media screen and (min-width: 1024px) {
     #homepage-hero .left .text-box {
-        width: 50vw;
+        width: 40vw;
         height: 70vh;
         bottom: 0;
     }
@@ -1253,6 +1263,10 @@ section.reverse .left {
     margin-right: 20px;
 }
 
+.portfolio-items {
+    background: black;
+}
+
 @media screen and (min-width: 760px) {
     #portfolio .portfolio-items-container #portfolio-canvas-container canvas {
         min-width: 500px;
@@ -1300,6 +1314,13 @@ section.reverse .left {
 #portfolio .portfolio-navigation .arrows .arrow img.reverse {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+@media screen and (max-width:650px) {
+    header #top-strip-container #top-strip #logo img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
