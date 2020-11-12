@@ -86,6 +86,29 @@ section.contain {
     outline: 0;
 }
 
+.cart-img {
+    border-radius: 26px !important;
+    width: 87px !important;
+    height: 99px !important;
+}
+
+.prd-txt {
+    font-size: 22px;
+    line-height: 29px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #444444;
+    margin-left: 5px;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
+}
+
 svg {
     overflow: hidden;
     vertical-align: middle;
@@ -242,8 +265,8 @@ header #top-strip-container #top-strip #logo {
 }
 
 header #top-strip-container #top-strip #logo img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 200px;
 }
 
 header #top-strip-container #top-strip #logo .default-logo {
@@ -537,6 +560,13 @@ svg#Layer_2 {
 
 .cart-box {
     background: #E8E7E7;
+    border: 1px solid #E8E7E7;
+    display: inline-block;
+    width: 100%;
+}
+
+.item {
+    display: flex;
 }
 
 .cart-txt {

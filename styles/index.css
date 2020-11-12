@@ -80,6 +80,13 @@ section.contain {
     outline: 0;
 }
 
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
+}
+
 @media screen and (min-width: 760px) {
     section div.contain,
     section.contain {
@@ -994,8 +1001,6 @@ section.reverse .left {
 #homepage-hero .right .hero-image-container {
     height: 90vh;
     width: 100%;
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -1004,8 +1009,8 @@ section.reverse .left {
 }
 
 #homepage-hero .right .hero-image-container #hero-image {
-    height: 100%;
-    width: auto;
+    height: 150px;
+    width: 200px;
 }
 
 #homepage-hero .right #banner-mask {

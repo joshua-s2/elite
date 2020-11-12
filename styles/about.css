@@ -80,6 +80,13 @@ section.contain {
     outline: 0;
 }
 
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
+}
+
 svg {
     overflow: hidden;
     vertical-align: middle;
@@ -187,8 +194,8 @@ header #top-strip-container #top-strip #logo {
 }
 
 header #top-strip-container #top-strip #logo img {
-    width: 100%;
-    height: auto;
+    width: 150px;
+    height: 200px;
 }
 
 header #top-strip-container #top-strip #logo .default-logo {
